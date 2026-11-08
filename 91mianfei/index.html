@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>91免费版官网-免费资源合集_在线工具与学习素材_下载与使用指南</title>
+  <meta name="description" content="91免费版官网提供免费资源合集与在线工具入口，涵盖学习素材、效率工具、影音资源等方向，适合学生与职场人查找实用内容。">
+  <meta name="keywords" content="免费资源合集,在线工具入口,学习素材下载,效率工具推荐,免费影音资源">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b5c8a'/%3E%3Ctext x='32' y='42' font-size='30' font-family='Arial' fill='%23ffffff' text-anchor='middle'%3E91%3C/text%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --brand: #2b5c8a;
+      --brand-light: #3d7ab5;
+      --brand-pale: #eaf1f9;
+      --accent: #e8734a;
+      --accent-pale: #fdf0eb;
+      --ink: #1f2937;
+      --ink-soft: #374151;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --bg: #f7f9fc;
+      --panel: #ffffff;
+      --radius-s: 6px;
+      --radius-m: 10px;
+      --radius-l: 16px;
+      --shadow-s: 0 1px 3px rgba(0,0,0,.06);
+      --shadow-m: 0 4px 14px rgba(0,0,0,.07);
+      --sticky-h: 132px;
+      --max-w: 1360px;
+      --font: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 15px;
+      padding-top: var(--sticky-h);
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style: none; }
+    img, svg { display: block; max-width: 100%; }
+    button { font-family: inherit; cursor: pointer; }
+
+    /* ===== 吸顶公告条 ===== */
+    .notice-bar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: linear-gradient(90deg, #1e3a5f, #2b5c8a 60%, #3d7ab5);
+      color: #fff; font-size: 13px; line-height: 36px;
+      padding: 0 16px; text-align: center;
+      letter-spacing: .3px; white-space: nowrap; overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .notice-bar strong { color: #ffd58a; font-weight: 600; }
+
+    /* ===== 吸顶页头 ===== */
+    .site-header {
+      position: fixed; top: 36px; left: 0; right: 0; z-index: 99;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: var(--shadow-s);
+    }
+    .header-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 64px;
+      display: flex; align-items: center; gap: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .brand-mark {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-light));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 17px; letter-spacing: -1px;
+    }
+    .brand-name {
+      font-size: 19px; font-weight: 800; color: var(--brand);
+      letter-spacing: -.5px; line-height: 1.2; white-space: nowrap;
+    }
+    .header-nav {
+      display: flex; gap: 4px; flex: 1; overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a {
+      font-size: 14px; color: var(--ink-soft); padding: 6px 11px;
+      border-radius: var(--radius-s); white-space: nowrap;
+    }
+    .header-nav a:hover { background: var(--brand-pale); color: var(--brand); text-decoration: none; }
+    .header-search {
+      display: flex; align-items: center; gap: 0;
+      border: 1px solid var(--line); border-radius: 99px;
+      overflow: hidden; background: #fff; flex-shrink: 0;
+    }
+    .header-search input {
+      border: none; outline: none; padding: 7px 12px;
+      font-size: 13px; width: 150px; background: transparent;
+    }
+    .header-search button {
+      border: none; background: var(--brand); color: #fff;
+      padding: 7px 14px; font-size: 13px;
+    }
+    .header-search button:hover { background: var(--brand-light); }
+
+    /* ===== 首屏 ===== */
+    .hero {
+      background: linear-gradient(135deg, #eaf1f9 0%, #f7f9fc 55%, #fdf0eb 100%);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      padding: 40px 20px 36px;
+      display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center;
+    }
+    .hero-badge {
+      display: inline-block; font-size: 12px; font-weight: 600;
+      color: var(--brand); background: #fff;
+      border: 1px solid #c9dbf0; border-radius: 99px;
+      padding: 3px 12px; margin-bottom: 14px;
+    }
+    .hero h1 {
+      font-size: 38px; line-height: 1.25; color: #17324d;
+      letter-spacing: -1px; margin-bottom: 14px;
+    }
+    .hero-desc {
+      font-size: 15px; color: var(--ink-soft); max-width: 540px;
+      margin-bottom: 22px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary, .btn-ghost {
+      display: inline-block; padding: 10px 22px; border-radius: 99px;
+      font-size: 14px; font-weight: 600; text-decoration: none;
+      transition: .15s;
+    }
+    .btn-primary { background: var(--brand); color: #fff; box-shadow: 0 4px 12px rgba(43,92,138,.3); }
+    .btn-primary:hover { background: var(--brand-light); text-decoration: none; }
+    .btn-ghost { background: #fff; color: var(--brand); border: 1px solid #c9dbf0; }
+    .btn-ghost:hover { background: var(--brand-pale); text-decoration: none; }
+    .hero-stats { display: flex; gap: 28px; margin-top: 24px; }
+    .hero-stats div { font-size: 13px; color: var(--muted); }
+    .hero-stats strong { display: block; font-size: 22px; color: var(--brand); font-weight: 800; }
+
+    .hero-visual {
+      background: #fff; border-radius: var(--radius-l);
+      box-shadow: var(--shadow-m); padding: 20px;
+      border: 1px solid #e3ecf7;
+    }
+    .hv-title { font-size: 13px; color: var(--muted); margin-bottom: 12px; display: flex; justify-content: space-between; }
+    .hv-bar {
+      height: 8px; border-radius: 99px; background: #eef3fa; margin-bottom: 14px; overflow: hidden;
+    }
+    .hv-bar span { display: block; height: 100%; width: 78%; background: linear-gradient(90deg, var(--brand), var(--brand-light)); border-radius: 99px; }
+    .hv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .hv-item {
+      background: var(--brand-pale); border-radius: var(--radius-s);
+      padding: 10px 12px; font-size: 12px; color: var(--ink-soft);
+    }
+    .hv-item b { display: block; font-size: 14px; color: var(--brand); font-weight: 700; margin-bottom: 2px; }
+    .hv-note { margin-top: 12px; font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .hv-note::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #34c759; }
+
+    /* ===== 三栏主区 ===== */
+    .layout {
+      max-width: var(--max-w); margin: 0 auto;
+      padding: 28px 20px 48px;
+      display: grid;
+      grid-template-columns: 176px minmax(0,1fr) 248px;
+      gap: 24px;
+      align-items: start;
+    }
+    .col-left, .col-right { position: sticky; top: var(--sticky-h); }
+    .col-left { max-height: calc(100vh - var(--sticky-h) - 24px); overflow-y: auto; scrollbar-width: thin; }
+    .col-right { max-height: calc(100vh - var(--sticky-h) - 24px); overflow-y: auto; scrollbar-width: thin; }
+
+    .side-card {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: var(--radius-m); padding: 16px; margin-bottom: 16px;
+      box-shadow: var(--shadow-s);
+    }
+    .side-title {
+      font-size: 14px; font-weight: 700; color: #17324d;
+      padding-bottom: 10px; margin-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .side-title::before { content: ""; width: 3px; height: 14px; border-radius: 2px; background: var(--brand); }
+    .side-nav a {
+      display: block; font-size: 13px; color: var(--ink-soft);
+      padding: 6px 8px; border-radius: var(--radius-s);
+      margin-bottom: 2px; border-left: 2px solid transparent;
+    }
+    .side-nav a:hover { background: var(--brand-pale); color: var(--brand); text-decoration: none; border-left-color: var(--brand); }
+    .side-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .side-tags span {
+      font-size: 12px; color: var(--muted); background: #f3f6fa;
+      border-radius: 99px; padding: 3px 10px; cursor: default;
+    }
+    .side-tags span:hover { background: var(--brand-pale); color: var(--brand); }
+
+    .toc a {
+      display: block; font-size: 13px; color: var(--ink-soft);
+      padding: 5px 0 5px 10px; border-left: 2px solid #dde5f0;
+      margin-bottom: 2px; line-height: 1.4;
+    }
+    .toc a:hover { border-left-color: var(--brand); color: var(--brand); text-decoration: none; }
+
+    .hot-list li { padding: 8px 0; border-bottom: 1px dashed #eef1f5; }
+    .hot-list li:last-child { border-bottom: none; }
+    .hot-list a { font-size: 13px; color: var(--ink-soft); line-height: 1.5; }
+    .hot-list a:hover { color: var(--brand); }
+    .hot-list .meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    /* ===== 中栏板块 ===== */
+    .section {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: var(--radius-m); padding: 24px 26px;
+      margin-bottom: 20px; box-shadow: var(--shadow-s);
+      scroll-margin-top: calc(var(--sticky-h) + 12px);
+    }
+    .section-h2 {
+      font-size: 20px; color: #17324d; font-weight: 800;
+      margin-bottom: 6px; display: flex; align-items: center; gap: 8px;
+    }
+    .section-h2::before { content: ""; width: 4px; height: 20px; border-radius: 3px; background: var(--accent); }
+    .section-lead { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
+
+    .intro-text p { margin-bottom: 12px; color: var(--ink-soft); font-size: 14.5px; }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: var(--brand); }
+
+    /* 热门内容卡片 */
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .content-card {
+      border: 1px solid var(--line); border-radius: var(--radius-m);
+      padding: 14px; background: #fff; transition: .15s;
+      display: flex; flex-direction: column;
+    }
+    .content-card:hover { border-color: #b9d0e8; box-shadow: var(--shadow-m); transform: translateY(-2px); }
+    .card-type {
+      display: inline-block; font-size: 11px; font-weight: 600;
+      color: var(--accent); background: var(--accent-pale);
+      border-radius: 4px; padding: 1px 8px; margin-bottom: 8px; align-self: flex-start;
+    }
+    .card-title { font-size: 14.5px; font-weight: 700; color: #17324d; margin-bottom: 6px; line-height: 1.45; }
+    .card-desc { font-size: 12.5px; color: var(--muted); margin-bottom: 10px; flex: 1; line-height: 1.6; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
+    .card-tags span { font-size: 11px; color: var(--brand); background: var(--brand-pale); border-radius: 4px; padding: 1px 7px; }
+    .card-meta { font-size: 11.5px; color: #9ca3af; display: flex; justify-content: space-between; border-top: 1px solid #f1f4f8; padding-top: 8px; }
+
+    /* 最新更新列表 */
+    .update-list li {
+      display: flex; gap: 12px; padding: 10px 0;
+      border-bottom: 1px dashed #eef1f5; align-items: baseline;
+    }
+    .update-list li:last-child { border-bottom: none; }
+    .update-date { font-size: 12px; color: #9ca3af; flex-shrink: 0; width: 52px; }
+    .update-name { font-size: 14px; font-weight: 600; color: var(--ink-soft); flex-shrink: 0; }
+    .update-name:hover { color: var(--brand); }
+    .update-brief { font-size: 12.5px; color: var(--muted); flex: 1; }
+
+    /* 分类入口 */
+    .cat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .cat-item {
+      display: block; text-align: center; padding: 14px 8px;
+      border-radius: var(--radius-s); background: #f6f9fd;
+      border: 1px solid #e6edf6; font-size: 13px; font-weight: 600;
+      color: var(--ink-soft); transition: .15s;
+    }
+    .cat-item:hover { background: var(--brand-pale); border-color: #b9d0e8; color: var(--brand); text-decoration: none; }
+    .cat-item small { display: block; font-size: 11px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+
+    /* 深度解析 */
+    .deep h3 { font-size: 16px; color: #17324d; margin: 20px 0 8px; font-weight: 700; }
+    .deep h3:first-of-type { margin-top: 0; }
+    .deep p { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 10px; }
+    .deep ul { padding-left: 20px; margin-bottom: 12px; }
+    .deep li { font-size: 14px; color: var(--ink-soft); margin-bottom: 5px; position: relative; list-style: disc; }
+    .deep .hl { background: linear-gradient(transparent 62%, #ffe9a8 62%); font-weight: 600; }
+
+    /* 体验指南步骤 */
+    .steps { counter-reset: step; }
+    .step-item {
+      display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px dashed #eef1f5;
+    }
+    .step-item:last-child { border-bottom: none; }
+    .step-num {
+      counter-increment: step; flex-shrink: 0;
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--brand-pale); color: var(--brand);
+      font-weight: 800; font-size: 13px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step-num::before { content: counter(step); }
+    .step-body b { font-size: 14px; color: #17324d; display: block; margin-bottom: 2px; }
+    .step-body span { font-size: 13px; color: var(--muted); }
+
+    /* FAQ */
+    .faq details {
+      border: 1px solid var(--line); border-radius: var(--radius-s);
+      margin-bottom: 8px; overflow: hidden; background: #fff;
+    }
+    .faq summary {
+      padding: 12px 16px; font-size: 14px; font-weight: 600;
+      color: var(--ink-soft); cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: .15s;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; font-size: 18px; color: var(--brand); font-weight: 400; }
+    .faq details[open] summary::after { content: "−"; }
+    .faq details[open] summary { background: var(--brand-pale); color: var(--brand); }
+    .faq .faq-answer { padding: 0 16px 14px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.7; }
+
+    /* 评论 */
+    .comment-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .comment-item {
+      background: #f8fafc; border-radius: var(--radius-s);
+      padding: 10px 12px; border: 1px solid #eef1f5;
+    }
+    .comment-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+    .comment-name { font-size: 12.5px; font-weight: 700; color: var(--brand); }
+    .comment-stars { font-size: 11px; color: #f5a623; letter-spacing: 1px; }
+    .comment-text { font-size: 12.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* 相关资讯 */
+    .news-list li { padding: 12px 0; border-bottom: 1px dashed #eef1f5; }
+    .news-list li:last-child { border-bottom: none; }
+    .news-head { display: flex; gap: 10px; align-items: baseline; margin-bottom: 3px; }
+    .news-title { font-size: 14px; font-weight: 600; color: var(--ink-soft); }
+    .news-title:hover { color: var(--brand); }
+    .news-date { font-size: 11.5px; color: #9ca3af; flex-shrink: 0; }
+    .news-brief { font-size: 12.5px; color: var(--muted); }
+
+    /* 相关推荐 */
+    .rec-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .rec-tags a {
+      font-size: 13px; color: var(--ink-soft); background: #f3f6fa;
+      border: 1px solid #e6edf6; border-radius: 99px;
+      padding: 5px 14px; transition: .15s;
+    }
+    .rec-tags a:hover { background: var(--brand-pale); border-color: #b9d0e8; color: var(--brand); text-decoration: none; }
+
+    /* 精选内容 */
+    .feature-panel {
+      background: linear-gradient(135deg, #eaf1f9, #fdf0eb);
+      border-radius: var(--radius-m); padding: 18px 20px;
+      border: 1px solid #e3ecf7;
+    }
+    .feature-panel p { font-size: 14px; color: var(--ink-soft); margin-bottom: 10px; }
+    .feature-quote {
+      font-size: 14px; color: #17324d; font-style: italic;
+      border-left: 3px solid var(--accent); padding-left: 14px;
+      margin-top: 10px;
+    }
+
+    /* 无结果提示 */
+    .no-result {
+      display: none; padding: 14px; text-align: center;
+      font-size: 13px; color: var(--muted); background: #fafbfc;
+      border-radius: var(--radius-s); border: 1px dashed var(--line);
+    }
+
+    /* ===== 页尾 ===== */
+    .site-footer {
+      background: #17324d; color: #b8c9dc;
+      margin-top: 20px;
+    }
+    .footer-inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 36px 20px 24px;
+    }
+    .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 30px; margin-bottom: 28px; }
+    .footer-brand b { font-size: 18px; color: #fff; display: block; margin-bottom: 8px; }
+    .footer-brand p { font-size: 12.5px; line-height: 1.7; color: #8fa8c4; }
+    .footer-col h4 { font-size: 13px; color: #fff; margin-bottom: 10px; font-weight: 600; }
+    .footer-col a { display: block; font-size: 12.5px; color: #8fa8c4; padding: 3px 0; }
+    .footer-col a:hover { color: #fff; text-decoration: none; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1); padding-top: 16px;
+      font-size: 11.5px; color: #6d87a3; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 1080px) {
+      .layout { grid-template-columns: 1fr; }
+      .col-left, .col-right { position: static; max-height: none; overflow: visible; }
+      .col-left { order: 3; }
+      .col-right { order: 4; }
+      .col-mid { order: 1; }
+      .hero-inner { grid-template-columns: 1fr; gap: 24px; }
+      .hero h1 { font-size: 30px; }
+      .card-grid { grid-template-columns: 1fr 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .side-card { margin-bottom: 12px; }
+      .side-nav { display: flex; flex-wrap: wrap; gap: 4px; }
+      .side-nav a { border-left: none; border-bottom: 2px solid transparent; }
+      .side-nav a:hover { border-bottom-color: var(--brand); }
+    }
+    @media (max-width: 640px) {
+      :root { --sticky-h: 118px; }
+      body { font-size: 14px; padding-top: var(--sticky-h); }
+      .notice-bar { font-size: 11.5px; line-height: 32px; }
+      .site-header { top: 32px; }
+      .header-inner { height: 56px; padding: 0 12px; gap: 10px; }
+      .brand-name { font-size: 16px; }
+      .brand-mark { width: 32px; height: 32px; font-size: 14px; }
+      .header-nav { display: none; }
+      .header-search input { width: 100px; }
+      .hero-inner { padding: 26px 14px 24px; }
+      .hero h1 { font-size: 25px; }
+      .hero-desc { font-size: 14px; }
+      .hero-stats { gap: 16px; }
+      .hero-stats strong { font-size: 18px; }
+      .layout { padding: 16px 12px 32px; gap: 14px; }
+      .section { padding: 18px 14px; }
+      .section-h2 { font-size: 17px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: repeat(2, 1fr); }
+      .comment-list { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 18px; }
+      .update-list li { flex-wrap: wrap; gap: 4px; }
+      .update-brief { flex-basis: 100%; }
+      .update-date { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="notice-bar">
+    <strong>免费资源上新</strong> · 本周新增 26 个在线工具与学习素材包 · 无需登录即可浏览大部分内容
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/#top" class="brand" style="text-decoration:none;">
+        <span class="brand-mark">91</span>
+        <span class="brand-name">91免费版官网</span>
+      </a>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#intro">平台简介</a>
+        <a href="/#hot">热门资源</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#news">相关资讯</a>
+      </nav>
+      <div class="header-search">
+        <input type="search" id="searchInput" placeholder="搜索内容名称或标签…" aria-label="站内搜索">
+        <button type="button" id="searchBtn">搜索</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-badge">免费资源 · 在线工具 · 学习素材</span>
+        <h1>91免费版官网</h1>
+        <p class="hero-desc">
+          汇集免费可用的在线工具、学习资料与效率资源，按类型与使用场景整理。学生、职场人和自由创作者可以在这里快速找到下载入口、使用说明与替代选择。
+        </p>
+        <div class="hero-actions">
+          <a href="/#hot" class="btn-primary">浏览热门资源</a>
+          <a href="/#category" class="btn-ghost">按分类查找</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>230+</strong>收录资源</div>
+          <div><strong>26</strong>本周上新</div>
+          <div><strong>9</strong>内容大类</div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hv-title"><span>资源更新趋势</span><span>示例看板</span></div>
+        <div class="hv-bar"><span></span></div>
+        <div class="hv-grid">
+          <div class="hv-item"><b>学习素材</b>PPT模板 / 论文工具</div>
+          <div class="hv-item"><b>效率工具</b>格式转换 / 待办管理</div>
+          <div class="hv-item"><b>影音资源</b>音频剪辑 / 素材库</div>
+          <div class="hv-item"><b>设计辅助</b>配色 / 图标 / 字体</div>
+        </div>
+        <div class="hv-note">本周更新集中在学习与效率方向</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主内容区 -->
+  <div class="layout" id="mainLayout">
+
+    <!-- 左栏 -->
+    <aside class="col-left" aria-label="频道导航与标签索引">
+      <div class="side-card">
+        <div class="side-title">频道导航</div>
+        <nav class="side-nav">
+          <a href="/#intro">平台简介</a>
+          <a href="/#hot">热门内容推荐</a>
+          <a href="/#latest">最新更新动态</a>
+          <a href="/#category">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#recommend">相关推荐</a>
+          <a href="/#feature">精选内容</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <div class="side-title">热门标签</div>
+        <div class="side-tags">
+          <span>免费资源合集</span>
+          <span>在线工具入口</span>
+          <span>学习素材下载</span>
+          <span>效率工具推荐</span>
+          <span>影音素材</span>
+          <span>格式转换</span>
+          <span>PPT模板</span>
+          <span>论文查重</span>
+        </div>
+      </div>
+      <div class="side-card">
+        <div class="side-title">内容速览</div>
+        <ul class="hot-list">
+          <li><a href="/#hot">期末复习资料包合集</a><div class="meta">学习素材 · 热度 98</div></li>
+          <li><a href="/#hot">在线PDF转换工具推荐</a><div class="meta">效率工具 · 热度 95</div></li>
+          <li><a href="/#hot">无版权音效素材库</a><div class="meta">影音资源 · 热度 91</div></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 中栏 -->
+    <main class="col-mid">
+
+      <!-- 1. 内容简介 -->
+      <section class="section" id="intro">
+        <h2 class="section-h2">平台简介：免费资源与在线工具的集中入口</h2>
+        <p class="section-lead">了解这里收录什么、适合谁用、如何快速找到需要的资源</p>
+        <div class="intro-text">
+          <p>
+            <strong>91免费版官网</strong>是一个面向日常学习与办公场景的免费资源导航站。我们把分散在各类平台上的免费工具、学习素材与效率资源整理成可筛选的条目，减少在搜索页之间反复跳转的时间。无论你是准备报告的大学生、处理表格的职场人，还是需要素材的自由创作者，都能按类型快速定位。
+          </p>
+          <p>
+            这里的资源按照“学习素材下载”“在线工具入口”“效率工具推荐”等方向划分，每个条目都标注了基本用途、适用场景和访问方式。对于需要对比的用户，我们提供了同类工具的简要差异说明；对于想找替代方案的用户，分类入口与相关推荐可以帮助你扩展选择范围。
+          </p>
+          <p>
+            在内容更新方面，团队每周整理一次新增资源，优先收录无需复杂注册、可直接体验的工具与素材。部分资源需要配合特定软件使用，条目摘要中会注明前置条件，方便你在下载前判断是否匹配自己的设备与需求。
+          </p>
+          <p>
+            如果你习惯用手机浏览，页面支持响应式布局，分类与标签可以横向滑动查看；桌面端则提供左侧频道与右侧辅助阅读栏，方便在长内容中保持方向感。搜索框支持按内容名称和标签查找当前页面收录的条目。
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="section" id="hot">
+        <h2 class="section-h2">热门内容推荐：按使用场景筛选的免费资源</h2>
+        <p class="section-lead">以下条目根据近期浏览与收藏整理，展示具体资源名称与适用方向</p>
+        <div class="card-grid" id="hotGrid">
+          <article class="content-card" data-tags="学习素材 论文 模板">
+            <span class="card-type">学习素材</span>
+            <h3 class="card-title">期末复习资料包合集：多学科笔记与题库</h3>
+            <p class="card-desc">覆盖高数、大学物理、英语四六级等常见科目，包含知识清单与练习题目，适合考前集中回顾。</p>
+            <div class="card-tags"><span>学习素材下载</span><span>考前复习</span><span>笔记整理</span></div>
+            <div class="card-meta"><span>热度 98</span><span>本周更新</span></div>
+          </article>
+          <article class="content-card" data-tags="效率工具 格式转换 PDF">
+            <span class="card-type">效率工具</span>
+            <h3 class="card-title">在线PDF转Word工具：免安装直接使用</h3>
+            <p class="card-desc">支持PDF与Word、Excel互转，适合处理临时文档格式调整，界面简洁，无需注册即可试用基础功能。</p>
+            <div class="card-tags"><span>在线工具入口</span><span>格式转换</span><span>办公效率</span></div>
+            <div class="card-meta"><span>热度 95</span><span>常用推荐</span></div>
+          </article>
+          <article class="content-card" data-tags="影音资源 音效 素材">
+            <span class="card-type">影音资源</span>
+            <h3 class="card-title">无版权音效素材库：短视频配乐与转场音</h3>
+            <p class="card-desc">收录环境音、提示音和转场音效，适合短视频剪辑与播客制作，标注了授权范围与建议使用场景。</p>
+            <div class="card-tags"><span>免费影音资源</span><span>音频剪辑</span><span>创作素材</span></div>
+            <div class="card-meta"><span>热度 91</span><span>编辑精选</span></div>
+          </article>
+          <article class="content-card" data-tags="设计辅助 配色 图标">
+            <span class="card-type">设计辅助</span>
+            <h3 class="card-title">配色方案生成器：快速获取UI色板</h3>
+            <p class="card-desc">输入主色即可生成协调的配色组合，提供HEX与RGB数值，适合网页设计与演示文稿制作。</p>
+            <div class="card-tags"><span>在线工具入口</span><span>配色工具</span><span>设计素材</span></div>
+            <div class="card-meta"><span>热度 88</span><span>新收录</span></div>
+          </article>
+          <article class="content-card" data-tags="学习素材 PPT 模板">
+            <span class="card-type">学习素材</span>
+            <h3 class="card-title">学术汇报PPT模板：简洁答辩风格</h3>
+            <p class="card-desc">提供开题、中期检查与毕业答辩三类版式，结构清晰，适合需要快速搭建汇报框架的研究生。</p>
+            <div class="card-tags"><span>学习素材下载</span><span>PPT模板</span><span>答辩汇报</span></div>
+            <div class="card-meta"><span>热度 86</span><span>本周更新</span></div>
+          </article>
+          <article class="content-card" data-tags="效率工具 待办 时间管理">
+            <span class="card-type">效率工具</span>
+            <h3 class="card-title">轻量待办清单工具：无需登录的看板</h3>
+            <p class="card-desc">支持任务分组与截止日期提醒，数据保存在本地浏览器，适合个人日常事务管理与项目拆解。</p>
+            <div class="card-tags"><span>效率工具推荐</span><span>时间管理</span><span>任务清单</span></div>
+            <div class="card-meta"><span>热度 84</span><span>常用推荐</span></div>
+          </article>
+        </div>
+        <div class="no-result" id="noResult">没有找到匹配的内容，试试其他关键词。</div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section" id="latest">
+        <h2 class="section-h2">最新更新动态：近期收录与调整</h2>
+        <p class="section-lead">按时间顺序展示资源上新与内容修订，方便持续关注</p>
+        <ul class="update-list" id="latestList">
+          <li><span class="update-date">03-18</span><a href="/#hot" class="update-name">论文查重工具对比表</a><span class="update-brief">补充了三款常见免费查重工具的适用范围与字数限制说明。</span></li>
+          <li><span class="update-date">03-17</span><a href="/#hot" class="update-name">视频压缩在线工具</a><span class="update-brief">新增按目标体积压缩功能，适合发送邮件或上传平台前处理。</span></li>
+          <li><span class="update-date">03-16</span><a href="/#hot" class="update-name">英语听力练习素材包</a><span class="update-brief">收录四级与六级听力真题音频片段，附带文本稿。</span></li>
+          <li><span class="update-date">03-15</span><a href="/#hot" class="update-name">图标资源下载站索引</a><span class="update-brief">整理五个可免费商用的图标站点，标注格式与风格差异。</span></li>
+          <li><span class="update-date">03-14</span><a href="/#hot" class="update-name">在线表格协作工具</a><span class="update-brief">增加多人同时编辑的免费方案说明，适合小组作业。</span></li>
+          <li><span class="update-date">03-13</span><a href="/#hot" class="update-name">简历排版模板合集</a><span class="update-brief">更新了应届生与转行两类简历的排版示例。</span></li>
+          <li><span class="update-date">03-12</span><a href="/#hot" class="update-name">图片去背景工具</a><span class="update-brief">收录两款可直接在浏览器运行的抠图工具，无需安装。</span></li>
+          <li><span class="update-date">03-11</span><a href="/#hot" class="update-name">文献管理软件入门指南</a><span class="update-brief">对比了三款免费文献管理工具的导入与引用功能。</span></li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="category">
+        <h2 class="section-h2">分类入口：按资源类型快速定位</h2>
+        <p class="section-lead">以下分类对应站内收录的主要方向，点击可查看相关条目</p>
+        <div class="cat-grid">
+          <a href="/#hot" class="cat-item">学习素材<small>笔记 / 题库 / 课件</small></a>
+          <a href="/#hot" class="cat-item">在线工具<small>转换 / 压缩 / 生成</small></a>
+          <a href="/#hot" class="cat-item">效率办公<small>待办 / 表格 / 协作</small></a>
+          <a href="/#hot" class="cat-item">设计辅助<small>配色 / 图标 / 字体</small></a>
+          <a href="/#hot" class="cat-item">影音资源<small>音效 / 配乐 / 剪辑</small></a>
+          <a href="/#hot" class="cat-item">文档模板<small>简历 / 报告 / 合同</small></a>
+          <a href="/#hot" class="cat-item">编程开发<small>代码片段 / 工具</small></a>
+          <a href="/#hot" class="cat-item">学术研究<small>查重 / 文献 / 翻译</small></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section class="section deep" id="deep">
+        <h2 class="section-h2">深度解析：免费资源的选择逻辑与使用边界</h2>
+        <p class="section-lead">从实际使用场景出发，说明如何判断一个免费资源是否适合自己</p>
+
+        <h3>免费资源的常见类型与适用人群</h3>
+        <p>
+          在<strong>91免费版官网</strong>收录的条目中，免费资源大致分为三类：完全免费且无使用限制的工具、免费但带有功能或次数限制的服务、以及需要注册或关注后获取的素材包。学习素材下载类资源多属于第三类，通常需要简单的获取步骤；在线工具入口则以前两类为主，适合临时处理任务。
+        </p>
+        <p>
+          如果你是学生，优先关注学习素材与学术研究方向，这类资源对设备要求低，且多提供直接下载；职场人更适合效率工具与文档模板，能快速解决格式转换、简历排版等具体问题；创作者则可以重点浏览影音资源与设计辅助分类，寻找可商用或标注授权范围的素材。
+        </p>
+
+        <h3>如何判断一个免费工具是否可靠</h3>
+        <p>
+          面对“免费”标签时，建议从三个角度快速判断：第一，是否要求提供过多个人信息，尤其是手机号与身份证号；第二，免费功能是否覆盖你的核心需求，例如格式转换工具要看输出文件是否带有水印；第三，是否有明确的隐私说明或数据保存方式。站内条目摘要会尽量标注这些信息，但最终仍需以工具实际页面为准。
+        </p>
+        <ul>
+          <li><strong>看限制条件</strong>：免费版是否限制文件大小、使用次数或导出格式。</li>
+          <li><strong>看数据去向</strong>：上传的文件是否会被保留，是否有删除选项。</li>
+          <li><strong>看替代方案</strong>：同类工具中是否有更少限制的选择，可参考相关推荐标签。</li>
+        </ul>
+
+        <h3>学习素材下载前的准备建议</h3>
+        <p>
+          下载学习素材前，先确认文件格式与自己的软件版本是否匹配。例如PPT模板需要较新版本的办公软件才能完整显示版式；题库类文件多为PDF或Word，手机端打开时注意排版是否错乱。如果素材包体积较大，建议在Wi-Fi环境下获取，并预留足够的存储空间。
+        </p>
+        <p>
+          另外，部分素材仅供个人学习参考，不包含商用授权。如果你计划将模板或音效用于公开项目，需要回到来源页面确认授权条款。站内相关资讯栏目会不定期整理授权说明较为清晰的资源方向，可以作为筛选参考。
+        </p>
+
+        <h3>免费在线工具的使用节奏</h3>
+        <p>
+          在线工具的优势是免安装、跨设备，但依赖网络环境。处理敏感文档时，优先选择明确说明“文件在本地浏览器处理”的工具；需要上传到服务器的工具，则避免放入包含个人信息的材料。对于高频使用的工具，可以加入浏览器书签或使用页内收藏提示，减少重复查找。
+        </p>
+        <p>
+          总体来看，<strong>91免费版官网</strong>更接近一个筛选与导航的起点，而不是资源的最终存放地。我们的目标是帮助你在较短时间内缩小选择范围，再结合自己的设备、预算与使用场景做最终判断。
+        </p>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section" id="guide">
+        <h2 class="section-h2">体验指南：站内查找与筛选的操作路径</h2>
+        <p class="section-lead">按步骤了解如何定位资源、使用搜索与扩展阅读</p>
+        <div class="steps">
+          <div class="step-item">
+            <span class="step-num"></span>
+            <div class="step-body"><b>从频道导航进入目标板块</b><span>左栏频道列表与顶部导航均可跳转，适合已有明确方向的访问者。</span></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num"></span>
+            <div class="step-body"><b>使用分类入口缩小范围</b><span>分类按资源类型划分，点击后定位到热门推荐区域查看对应条目。</span></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num"></span>
+            <div class="step-body"><b>通过搜索框查找具体名称</b><span>支持输入资源名称或标签关键词，页面会实时筛选热门卡片并给出无结果提示。</span></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num"></span>
+            <div class="step-body"><b>阅读卡片摘要判断适用性</b><span>每张卡片包含类型标签、简短看点与更新信息，帮助你在下载前做出判断。</span></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num"></span>
+            <div class="step-body"><b>利用相关推荐扩展选择</b><span>底部相关推荐标签指向具体内容方向，适合在几个备选资源之间做比较。</span></div>
+          </div>
+          <div class="step-item">
+            <span class="step-num"></span>
+            <div class="step-body"><b>移动端横向查看分类</b><span>手机屏幕下分类与标签支持滑动查看，正文会自动调整为单栏阅读。</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section faq" id="faq">
+        <h2 class="section-h2">常见问题：关于免费资源与使用方式</h2>
+        <p class="section-lead">围绕内容类型、更新频率与选择依据的集中解答</p>
+
+        <details>
+          <summary>91免费版官网主要收录哪些类型的免费资源？</summary>
+          <div class="faq-answer">目前以学习素材、在线工具、效率办公、设计辅助和影音资源为主，每个大类下再按具体用途细分，例如学习素材中包含笔记、题库与课件模板。</div>
+        </details>
+        <details>
+          <summary>这些免费资源一般多久更新一次？</summary>
+          <div class="faq-answer">团队按周整理新增条目，通常每周更新一次热门推荐与最新动态。分类入口中的资源会随着收录情况逐步补充，较热门的工具与素材会优先复核可用性。</div>
+        </details>
+        <details>
+          <summary>免费学习素材适合大学生还是职场人使用？</summary>
+          <div class="faq-answer">两类人群都能找到对应内容。大学生可以关注复习资料、论文工具与答辩模板；职场人更适合简历模板、格式转换与协作表格。分类标签中会注明典型使用场景。</div>
+        </details>
+        <details>
+          <summary>在线工具和下载类资源应该怎么选？</summary>
+          <div class="faq-answer">如果只是临时处理文件，优先考虑在线工具入口，免安装、打开即用；如果需要反复编辑或离线使用，下载类资源更合适。站内卡片会标注工具类型与是否需要注册。</div>
+        </details>
+        <details>
+          <summary>免费资源是否存在使用限制或水印？</summary>
+          <div class="faq-answer">部分工具免费版会限制文件大小、导出格式或添加水印，素材包则可能仅限个人学习使用。建议在使用前阅读条目摘要中的限制说明，并回到来源页面确认授权范围。</div>
+        </details>
+        <details>
+          <summary>如何在几个同类免费工具之间做选择？</summary>
+          <div class="faq-answer">可以从三个方向比较：免费功能是否满足核心需求、是否需要上传敏感文件、以及是否有明显的次数限制。相关推荐标签会列出同方向的其他条目，方便逐项对照。</div>
+        </details>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="comments">
+        <h2 class="section-h2">用户评论：来自不同使用场景的反馈</h2>
+        <p class="section-lead">以下为示例评论，展示访问者对资源类型与使用体验的多样看法</p>
+        <div class="comment-list">
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">林间小鹿</span><span class="comment-stars">★★★★★</span></div><div class="comment-text">期末复习资料包很实用，知识点分类清楚，省去了自己整理的时间。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">北港不夏</span><span class="comment-stars">★★★★☆</span></div><div class="comment-text">PDF转换工具在线就能用，临时改文档格式很方便，希望后续能标注更多免费限制。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">橘子汽水</span><span class="comment-stars">★★★★★</span></div><div class="comment-text">音效素材库找转场音很顺手，授权说明写得比较清楚，做短视频够用了。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">晚风信使</span><span class="comment-stars">★★★☆☆</span></div><div class="comment-text">分类挺全，但有些工具点进去需要注册，希望摘要里能提前说明。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">山海皆可平</span><span class="comment-stars">★★★★☆</span></div><div class="comment-text">配色生成器对我做PPT很有帮助，生成的色板可以直接复制色值。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">芝士年糕</span><span class="comment-stars">★★★★★</span></div><div class="comment-text">答辩PPT模板结构很清晰，改一改就能用，适合不想从零排版的人。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">七号站台</span><span class="comment-stars">★★★★☆</span></div><div class="comment-text">待办工具轻量好用，本地保存数据这一点比较放心，适合个人日程。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">雾岛听风</span><span class="comment-stars">★★★☆☆</span></div><div class="comment-text">资源挺多，但部分下载链接需要跳转，手机端操作稍显麻烦。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">键盘上的猫</span><span class="comment-stars">★★★★★</span></div><div class="comment-text">文献管理入门那篇对比很实用，帮我确定了用哪个工具入门。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">一叶知秋</span><span class="comment-stars">★★★★☆</span></div><div class="comment-text">搜索框能直接筛卡片，找起来比翻列表快，无结果提示也清楚。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">蓝莓之夜</span><span class="comment-stars">★★★★★</span></div><div class="comment-text">简历模板排版干净，适合应届生，修改起来不复杂。</div></div>
+          <div class="comment-item"><div class="comment-head"><span class="comment-name">慢速快门</span><span class="comment-stars">★★★☆☆</span></div><div class="comment-text">希望影音资源再多一些，目前音效类比较多，配乐相对少。</div></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news">
+        <h2 class="section-h2">相关资讯：免费资源与工具使用动态</h2>
+        <p class="section-lead">围绕资源类型、授权方式与使用技巧的短资讯</p>
+        <ul class="news-list">
+          <li>
+            <div class="news-head"><a href="/#news" class="news-title">免费素材授权标识怎么看：常见许可类型说明</a><span class="news-date">03-18</span></div>
+            <div class="news-brief">整理CC0、CC BY与个人学习授权之间的差异，帮助判断素材能否用于公开项目。</div>
+          </li>
+          <li>
+            <div class="news-head"><a href="/#news" class="news-title">在线格式转换工具的免费限制对比思路</a><span class="news-date">03-16</span></div>
+            <div class="news-brief">从文件大小、次数和导出质量三个维度，说明如何快速筛选适合的免费工具。</div>
+          </li>
+          <li>
+            <div class="news-head"><a href="/#news" class="news-title">学习资料包下载后的整理方法</a><span class="news-date">03-14</span></div>
+            <div class="news-brief">按科目与用途建立文件夹，配合命名规则，减少重复下载与查找时间。</div>
+          </li>
+          <li>
+            <div class="news-head"><a href="/#news" class="news-title">短视频音效素材的合规使用要点</a><span class="news-date">03-12</span></div>
+            <div class="news-brief">音效虽小，授权仍需确认；提示音与环境音的使用边界有所不同。</div>
+          </li>
+          <li>
+            <div class="news-head"><a href="/#news" class="news-title">免费查重工具的字数限制与适用范围</a><span class="news-date">03-10</span></div>
+            <div class="news-brief">不同工具对首次使用与每日次数有不同规则，提前了解可避免重复上传。</div>
+          </li>
+          <li>
+            <div class="news-head"><a href="/#news" class="news-title">网页端配色工具的导出格式说明</a><span class="news-date">03-08</span></div>
+            <div class="news-brief">HEX、RGB与HSL在网页设计与演示文稿中的适配差异。</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section" id="recommend">
+        <h2 class="section-h2">相关推荐：按具体内容方向扩展</h2>
+        <p class="section-lead">以下标签指向站内同方向的其他条目或分类，方便继续查找</p>
+        <div class="rec-tags">
+          <a href="/#hot">大学期末复习资料</a>
+          <a href="/#hot">PDF转Word在线工具</a>
+          <a href="/#hot">无版权音效下载</a>
+          <a href="/#hot">UI配色生成器</a>
+          <a href="/#hot">答辩PPT模板</a>
+          <a href="/#hot">待办清单工具</a>
+          <a href="/#hot">论文查重免费入口</a>
+          <a href="/#hot">视频压缩在线处理</a>
+          <a href="/#hot">简历排版模板</a>
+        </div>
+      </section>
+
+      <!-- 11. 精选内容 -->
+      <section class="section" id="feature">
+        <h2 class="section-h2">精选内容：本周值得关注的资源方向</h2>
+        <p class="section-lead">结合更新动态与使用反馈，挑选一个方向做简要展开</p>
+        <div class="feature-panel">
+          <p>
+            本周精选方向是「学习素材与效率工具的交叉场景」。不少访问者会在同一时间段内既需要整理复习资料，又需要处理文档格式，因此我们集中更新了学习资料包与在线转换工具两类条目。前者强调知识点的结构化，后者侧重操作的即时性。
+          </p>
+          <p>
+            如果你正在准备考试或课程汇报，可以先从学习素材分类中找到对应科目的资料包，再根据文件格式选择是否需要转换工具。若资料包内包含PDF格式的题目，搭配在线PDF转Word工具可以方便地拆分与标注。
+          </p>
+          <div class="feature-quote">
+            “免费资源的价值不在于数量多，而在于在你需要的时候能快速找到并判断是否可用。”
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏 -->
+    <aside class="col-right" aria-label="辅助阅读">
+      <div class="side-card">
+        <div class="side-title">页内目录</div>
+        <nav class="toc">
+          <a href="/#intro">平台简介</a>
+          <a href="/#hot">热门内容推荐</a>
+          <a href="/#latest">最新更新动态</a>
+          <a href="/#category">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#recommend">相关推荐</a>
+          <a href="/#feature">精选内容</a>
+        </nav>
+      </div>
+      <div class="side-card">
+        <div class="side-title">热门条目</div>
+        <ul class="hot-list">
+          <li><a href="/#hot">期末复习资料包合集</a><div class="meta">学习素材 · 98 热度</div></li>
+          <li><a href="/#hot">在线PDF转Word工具</a><div class="meta">效率工具 · 95 热度</div></li>
+          <li><a href="/#hot">无版权音效素材库</a><div class="meta">影音资源 · 91 热度</div></li>
+          <li><a href="/#hot">配色方案生成器</a><div class="meta">设计辅助 · 88 热度</div></li>
+          <li><a href="/#hot">学术汇报PPT模板</a><div class="meta">学习素材 · 86 热度</div></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <div class="side-title">延伸阅读</div>
+        <ul class="hot-list">
+          <li><a href="/#deep">免费工具的限制条件怎么看</a></li>
+          <li><a href="/#deep">学习素材的授权范围说明</a></li>
+          <li><a href="/#news">格式转换工具筛选思路</a></li>
+          <li><a href="/#recommend">同类免费资源对比入口</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <b>91免费版官网</b>
+          <p>免费资源与在线工具的导航入口，按类型与场景整理学习素材、效率工具与创作资源，帮助访问者快速缩小选择范围。</p>
+        </div>
+        <div class="footer-col">
+          <h4>内容分类</h4>
+          <a href="/#category">学习素材</a>
+          <a href="/#category">在线工具</a>
+          <a href="/#category">效率办公</a>
+          <a href="/#category">设计辅助</a>
+          <a href="/#category">影音资源</a>
+        </div>
+        <div class="footer-col">
+          <h4>栏目入口</h4>
+          <a href="/#hot">热门内容推荐</a>
+          <a href="/#latest">最新更新动态</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#news">相关资讯</a>
+        </div>
+        <div class="footer-col">
+          <h4>使用帮助</h4>
+          <a href="/#guide">体验指南</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#recommend">相关推荐</a>
+          <a href="/#feature">精选内容</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 91免费版官网 · 内容导航与资源索引</span>
+        <span>部分内容为示例数据，仅用于展示页面结构</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 轻量交互脚本 -->
+  <script>
+    (function () {
+      var searchInput = document.getElementById('searchInput');
+      var searchBtn = document.getElementById('searchBtn');
+      var hotGrid = document.getElementById('hotGrid');
+      var noResult = document.getElementById('noResult');
+      var cards = hotGrid ? Array.prototype.slice.call(hotGrid.querySelectorAll('.content-card')) : [];
+
+      function doSearch() {
+        if (!searchInput || !hotGrid) return;
+        var q = (searchInput.value || '').trim().toLowerCase();
+        if (!q) {
+          cards.forEach(function (c) { c.style.display = ''; });
+          if (noResult) noResult.style.display = 'none';
+          return;
+        }
+        var visible = 0;
+        cards.forEach(function (card) {
+          var text = (card.textContent || '').toLowerCase();
+          var tags = (card.getAttribute('data-tags') || '').toLowerCase();
+          if (text.indexOf(q) !== -1 || tags.indexOf(q) !== -1) {
+            card.style.display = '';
+            visible++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        if (noResult) noResult.style.display = visible === 0 ? 'block' : 'none';
+      }
+
+      if (searchBtn) searchBtn.addEventListener('click', doSearch);
+      if (searchInput) {
+        searchInput.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+        });
+        searchInput.addEventListener('input', doSearch);
+      }
+
+      // 锚点滚动时确保不遮挡（CSS scroll-margin-top 已兼容）
+      // 当通过搜索隐藏卡片后，用户再次空搜索时可恢复
+      window.addEventListener('hashchange', function () {
+        var hash = window.location.hash;
+        if (!hash) return;
+        var target = document.querySelector(hash);
+        if (target) {
+          // 让目标进入视野，不覆盖吸顶内容
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    })();
+  </script>
+</body>
+                                                                                         </html>
