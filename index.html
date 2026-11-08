@@ -1,0 +1,1670 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>91大赛-创意作品_参赛指南_奖项对比</title>
+  <meta name="description" content="91大赛是面向创意与技能比拼的赛事专题，提供参赛作品展示、赛程更新、组别说明与奖项对比，适合参赛者、评审和创意爱好者浏览。">
+  <meta name="keywords" content="创意作品展示,参赛指南,奖项设置对比,赛事更新,组别分类">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231e3a5f'/%3E%3Ctext x='50' y='68' font-size='52' font-weight='800' text-anchor='middle' fill='%23f5c542'%3E91%3C/text%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --brand: #1e3a5f;
+      --brand-light: #2c4f7a;
+      --accent: #d4941e;
+      --accent-soft: #f5e6c8;
+      --bg-page: #f4f2ed;
+      --bg-panel: #ffffff;
+      --bg-subtle: #faf9f6;
+      --text-main: #1f2937;
+      --text-secondary: #4b5563;
+      --text-muted: #6b7280;
+      --border-light: #e5e0d8;
+      --border-medium: #d1c9bc;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md: 0 4px 14px rgba(30,58,95,.07);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --header-h: 64px;
+      --announce-h: 36px;
+      --sticky-offset: calc(var(--announce-h) + var(--header-h));
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg-page);
+      color: var(--text-main);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { font-family: inherit; cursor: pointer; }
+    .container {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* --- 吸顶公告条 --- */
+    .announce-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--brand);
+      color: #fff;
+      font-size: 13px;
+      height: var(--announce-h);
+      display: flex;
+      align-items: center;
+      letter-spacing: .4px;
+      overflow: hidden;
+    }
+    .announce-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .announce-bar .badge {
+      background: var(--accent);
+      color: #1f2937;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      margin-right: 10px;
+      white-space: nowrap;
+    }
+    .announce-bar .msg {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .announce-bar .msg strong { color: var(--accent-soft); }
+    .announce-bar .close-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255,255,255,.6);
+      font-size: 18px;
+      line-height: 1;
+      padding: 0 0 0 16px;
+      flex-shrink: 0;
+    }
+    .announce-bar .close-btn:hover { color: #fff; }
+    /* --- 吸顶页头 --- */
+    .site-header {
+      position: sticky;
+      top: var(--announce-h);
+      z-index: 99;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-light);
+      height: var(--header-h);
+      box-shadow: var(--shadow-sm);
+      transition: top .2s;
+    }
+    .site-header.hide-announce { top: 0; }
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      gap: 24px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo-svg {
+      width: 36px;
+      height: 36px;
+      display: block;
+    }
+    .logo-text {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--brand);
+      letter-spacing: -.3px;
+    }
+    .header-nav {
+      display: flex;
+      gap: 6px;
+      flex: 1;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a {
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      transition: background .18s, color .18s;
+    }
+    .header-nav a:hover { background: var(--bg-subtle); color: var(--brand); }
+    .header-nav a.active { background: var(--brand); color: #fff; }
+    .search-mini {
+      display: flex;
+      align-items: center;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-radius: 24px;
+      padding: 0 6px 0 14px;
+      flex-shrink: 0;
+      height: 38px;
+      width: 220px;
+      transition: border-color .18s;
+    }
+    .search-mini:focus-within { border-color: var(--brand-light); }
+    .search-mini input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 13px;
+      width: 100%;
+      color: var(--text-main);
+      padding: 0;
+    }
+    .search-mini input::placeholder { color: var(--text-muted); }
+    .search-mini button {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+      transition: background .18s;
+    }
+    .search-mini button:hover { background: var(--accent); }
+    .search-feedback {
+      font-size: 12px;
+      color: var(--accent);
+      padding: 0 8px;
+      display: none;
+      white-space: nowrap;
+    }
+    /* --- 主题首屏 --- */
+    .hero {
+      background: linear-gradient(145deg, #1e3a5f 0%, #2c4f7a 55%, #3a648f 100%);
+      color: #fff;
+      padding: 52px 20px 48px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(245,197,66,.13) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      left: -40px;
+      bottom: -60px;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(255,255,255,.04) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .hero-content { max-width: 640px; flex: 1 1 420px; }
+    .hero-label {
+      display: inline-block;
+      background: rgba(245,197,66,.18);
+      color: #f5c542;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(245,197,66,.3);
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 52px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .hero-desc {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.82);
+      max-width: 520px;
+      margin-bottom: 26px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #1f2937;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 11px 26px;
+      border-radius: 30px;
+      border: none;
+      transition: background .18s, transform .15s;
+    }
+    .btn-primary:hover { background: #e8b44a; transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 11px 24px;
+      border-radius: 30px;
+      border: 1.5px solid rgba(255,255,255,.4);
+      transition: border-color .18s, background .18s;
+    }
+    .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+    .hero-visual {
+      flex: 0 1 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-visual svg { width: 100%; max-width: 320px; height: auto; display: block; }
+    /* --- 三栏主内容区 --- */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 178px minmax(0, 1fr) 240px;
+      gap: 28px;
+      align-items: start;
+      padding-bottom: 56px;
+    }
+    /* --- 左栏 --- */
+    .left-col {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-height: calc(100vh - var(--sticky-offset) - 32px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .side-block {
+      background: var(--bg-panel);
+      border-radius: var(--radius-md);
+      padding: 16px 14px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+    }
+    .side-block h3 {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .channel-list { display: flex; flex-direction: column; gap: 2px; }
+    .channel-list a {
+      display: block;
+      padding: 7px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: background .15s, color .15s;
+    }
+    .channel-list a:hover { background: var(--bg-subtle); color: var(--brand); }
+    .channel-list a.current { background: var(--brand); color: #fff; }
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tag-cloud a {
+      display: inline-block;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      padding: 4px 10px;
+      border-radius: 16px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      transition: background .15s, border-color .15s, color .15s;
+    }
+    .tag-cloud a:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--brand); }
+    /* --- 中栏 --- */
+    .center-col {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .content-section {
+      background: var(--bg-panel);
+      border-radius: var(--radius-md);
+      padding: 24px 26px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      scroll-margin-top: calc(var(--sticky-offset) + 18px);
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .section-header h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--brand);
+      letter-spacing: -.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-header h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+    .section-header .more-link {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+      transition: color .15s;
+    }
+    .section-header .more-link:hover { color: var(--accent); }
+    .intro-text p {
+      margin-bottom: 14px;
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      line-height: 1.8;
+    }
+    .intro-text p:last-child { margin-bottom: 0; }
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .content-card {
+      background: var(--bg-subtle);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      border: 1px solid var(--border-light);
+      transition: box-shadow .2s, border-color .2s, transform .15s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .content-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .card-type {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      font-size: 10.5px;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 12px;
+      letter-spacing: .3px;
+      align-self: flex-start;
+    }
+    .content-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.4;
+    }
+    .content-card .card-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .card-tags span {
+      font-size: 11px;
+      background: var(--bg-panel);
+      color: var(--text-muted);
+      padding: 2px 8px;
+      border-radius: 10px;
+      border: 1px solid var(--border-light);
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11.5px;
+      color: var(--text-muted);
+      border-top: 1px dashed var(--border-light);
+      padding-top: 8px;
+      margin-top: 2px;
+    }
+    .card-meta .score { color: var(--accent); font-weight: 700; }
+    /* 紧凑列表 */
+    .compact-list { display: flex; flex-direction: column; }
+    .compact-item {
+      display: flex;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-light);
+      align-items: flex-start;
+    }
+    .compact-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .compact-idx {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: var(--bg-subtle);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .compact-idx.hot { background: var(--accent-soft); color: var(--accent); }
+    .compact-body { flex: 1; min-width: 0; }
+    .compact-body h4 {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 3px;
+    }
+    .compact-body p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .compact-date {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .category-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 18px 8px;
+      text-align: center;
+      transition: border-color .18s, background .18s;
+    }
+    .category-item:hover { border-color: var(--accent); background: #fff; }
+    .category-item .cat-icon { font-size: 22px; line-height: 1; }
+    .category-item .cat-name { font-size: 13px; font-weight: 600; color: var(--text-main); }
+    .category-item .cat-count { font-size: 11px; color: var(--text-muted); }
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--brand);
+      margin: 22px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid var(--accent);
+    }
+    .deep-dive h3:first-of-type { margin-top: 0; }
+    .deep-dive p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .deep-dive ul {
+      margin: 8px 0 14px 6px;
+      padding-left: 18px;
+      list-style: disc;
+    }
+    .deep-dive ul li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+    .deep-dive .highlight-box {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    .faq-list details {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: border-color .18s;
+    }
+    .faq-list details[open] { border-color: var(--accent); }
+    .faq-list summary {
+      padding: 13px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      transition: background .15s;
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+';
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text-muted);
+      transition: transform .2s;
+      flex-shrink: 0;
+    }
+    .faq-list details[open] summary::after { content: '−'; color: var(--accent); }
+    .faq-list summary:hover { background: #f0ede6; }
+    .faq-answer {
+      padding: 0 16px 15px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+    /* 评论 */
+    .comment-list { display: flex; flex-direction: column; gap: 14px; }
+    .comment-item {
+      display: flex;
+      gap: 12px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .comment-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .comment-avatar {
+      flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .comment-body { flex: 1; min-width: 0; }
+    .comment-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 3px;
+      flex-wrap: wrap;
+    }
+    .comment-name { font-size: 13px; font-weight: 600; color: var(--brand); }
+    .comment-time { font-size: 11px; color: var(--text-muted); }
+    .comment-text { font-size: 13.5px; color: var(--text-secondary); line-height: 1.65; }
+    /* 相关资讯 */
+    .news-list { display: flex; flex-direction: column; gap: 14px; }
+    .news-item {
+      padding-bottom: 14px;
+      border-bottom: 1px dashed var(--border-light);
+    }
+    .news-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .news-item h3 {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      transition: color .15s;
+    }
+    .news-item:hover h3 { color: var(--accent); }
+    .news-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+    .news-item p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+    /* 相关推荐标签 */
+    .related-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .related-tags a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: background .15s, border-color .15s, color .15s;
+    }
+    .related-tags a:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--brand); }
+    .related-tags a .arrow { color: var(--text-muted); font-size: 11px; }
+    /* 引语卡 */
+    .quote-card {
+      background: linear-gradient(135deg, var(--brand) 0%, var(--brand-light) 100%);
+      color: #fff;
+      border-radius: var(--radius-md);
+      padding: 28px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .quote-card::before {
+      content: '“';
+      position: absolute;
+      top: -10px;
+      left: 16px;
+      font-size: 90px;
+      font-weight: 900;
+      opacity: .12;
+      line-height: 1;
+      color: #fff;
+    }
+    .quote-card blockquote {
+      font-size: 15.5px;
+      line-height: 1.75;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 14px;
+    }
+    .quote-card cite {
+      font-size: 13px;
+      font-style: normal;
+      color: rgba(255,255,255,.7);
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+    /* --- 右栏 --- */
+    .right-col {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-height: calc(100vh - var(--sticky-offset) - 32px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .toc-list { display: flex; flex-direction: column; gap: 2px; }
+    .toc-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      transition: background .15s, color .15s;
+    }
+    .toc-list a:hover { background: var(--bg-subtle); color: var(--brand); }
+    .toc-list a .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--border-medium);
+      flex-shrink: 0;
+    }
+    .toc-list a:hover .dot { background: var(--accent); }
+    .hot-list { display: flex; flex-direction: column; gap: 10px; }
+    .hot-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .hot-rank {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background: var(--bg-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .hot-rank.top { background: var(--accent); color: #fff; }
+    .hot-item a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      transition: color .15s;
+    }
+    .hot-item a:hover { color: var(--accent); }
+    .reading-links { display: flex; flex-direction: column; gap: 8px; }
+    .reading-links a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      padding: 6px 0;
+      border-bottom: 1px dashed var(--border-light);
+      transition: color .15s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .reading-links a:last-child { border-bottom: none; }
+    .reading-links a:hover { color: var(--accent); }
+    .reading-links a span { color: var(--text-muted); font-size: 11px; }
+    /* --- 页尾 --- */
+    .site-footer {
+      background: var(--brand);
+      color: rgba(255,255,255,.75);
+      padding: 40px 0 24px;
+      margin-top: 20px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .footer-brand .logo-text { color: #fff; font-size: 20px; }
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.7;
+      margin-top: 10px;
+      color: rgba(255,255,255,.55);
+      max-width: 280px;
+    }
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+      letter-spacing: .5px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: rgba(255,255,255,.6);
+      padding: 4px 0;
+      transition: color .15s;
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      font-size: 11.5px;
+      color: rgba(255,255,255,.4);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    /* 无结果提示 */
+    .no-result-tip {
+      display: none;
+      text-align: center;
+      padding: 28px 16px;
+      color: var(--text-muted);
+      font-size: 14px;
+      background: var(--bg-subtle);
+      border-radius: var(--radius-sm);
+      border: 1px dashed var(--border-medium);
+    }
+    .no-result-tip.show { display: block; }
+    /* --- 响应式 --- */
+    @media (max-width: 1080px) {
+      .main-layout { grid-template-columns: 160px minmax(0, 1fr); }
+      .right-col { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    }
+    @media (max-width: 820px) {
+      .main-layout { grid-template-columns: 1fr; }
+      .left-col {
+        position: static;
+        max-height: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .left-col .side-block { flex: 1 1 200px; }
+      .header-nav { display: none; }
+      .search-mini { width: 160px; }
+      .hero { padding: 36px 20px 32px; }
+      .hero .container { gap: 28px; }
+      .hero-visual { display: none; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .card-grid { grid-template-columns: 1fr; }
+      .content-section { padding: 18px 16px; }
+      .quote-card { padding: 22px 18px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 14px; }
+      .search-mini { width: 120px; }
+      .logo-text { font-size: 19px; }
+      .announce-bar .msg { font-size: 12px; }
+      .announce-bar .badge { font-size: 10px; padding: 2px 7px; }
+      .header-nav { display: none; }
+      .hero h1 { font-size: 30px; }
+      .hero-desc { font-size: 14px; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .category-item { padding: 14px 6px; }
+      .comment-avatar { width: 28px; height: 28px; font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce-bar" id="announceBar">
+  <div class="container">
+    <div class="msg">
+      <span class="badge">更新</span>
+      第三届 <strong>91大赛</strong> 初赛作品提交截止 6月30日 · 新增“数字叙事”组别
+    </div>
+    <button class="close-btn" aria-label="关闭公告" onclick="document.getElementById('announceBar').style.display='none';document.querySelector('.site-header').classList.add('hide-announce');">×</button>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="/#home" class="logo" aria-label="91大赛首页">
+      <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="100" height="100" rx="18" fill="#1e3a5f"/>
+        <circle cx="50" cy="50" r="32" fill="none" stroke="#f5c542" stroke-width="3" opacity=".4"/>
+        <text x="50" y="66" font-size="46" font-weight="900" text-anchor="middle" fill="#f5c542" font-family="sans-serif">91</text>
+      </svg>
+      <span class="logo-text">91大赛</span>
+    </a>
+    <nav class="header-nav" aria-label="主题导航">
+      <a href="/#intro" class="active">赛事介绍</a>
+      <a href="/#hot">热门作品</a>
+      <a href="/#updates">最新动态</a>
+      <a href="/#categories">组别分类</a>
+      <a href="/#deepdive">深度解析</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">讨论区</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <div class="search-mini">
+      <input type="text" id="searchInput" placeholder="搜索作品或组别…" aria-label="搜索页面内容">
+      <button type="button" id="searchBtn" aria-label="执行搜索">🔍</button>
+    </div>
+  </div>
+</header>
+
+<!-- 主题首屏 -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-label">创意 · 技能 · 表达</span>
+      <h1>91大赛</h1>
+      <p class="hero-desc">
+        面向创意写作者、视觉设计师与数字叙事者的年度竞技场。在这里浏览参赛作品、了解组别设置、对比奖项差异，找到属于你的赛道与参考。
+      </p>
+      <div class="hero-actions">
+        <a href="/#hot" class="btn-primary">浏览热门作品 →</a>
+        <a href="/#deepdive" class="btn-ghost">查看参赛指南</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f5c542" stop-opacity=".9"/>
+            <stop offset="100%" stop-color="#d4941e" stop-opacity=".5"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity=".18"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity=".04"/>
+          </linearGradient>
+        </defs>
+        <rect x="20" y="30" width="280" height="200" rx="16" fill="url(#g2)" stroke="rgba(255,255,255,.15)" stroke-width="1.5"/>
+        <rect x="44" y="54" width="120" height="10" rx="5" fill="rgba(255,255,255,.25)"/>
+        <rect x="44" y="74" width="180" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+        <rect x="44" y="90" width="150" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+        <circle cx="230" cy="130" r="38" fill="url(#g1)" opacity=".85"/>
+        <text x="230" y="138" font-size="22" font-weight="900" text-anchor="middle" fill="#1e3a5f" font-family="sans-serif">91</text>
+        <rect x="44" y="130" width="90" height="8" rx="4" fill="rgba(255,255,255,.1)"/>
+        <rect x="44" y="148" width="110" height="8" rx="4" fill="rgba(255,255,255,.1)"/>
+        <rect x="44" y="176" width="200" height="30" rx="8" fill="rgba(245,197,66,.12)" stroke="rgba(245,197,66,.3)" stroke-width="1"/>
+        <rect x="56" y="185" width="60" height="12" rx="6" fill="rgba(245,197,66,.35)"/>
+        <rect x="126" y="185" width="40" height="12" rx="6" fill="rgba(255,255,255,.15)"/>
+        <circle cx="80" cy="250" r="8" fill="rgba(245,197,66,.4)"/>
+        <circle cx="110" cy="250" r="8" fill="rgba(255,255,255,.12)"/>
+        <circle cx="140" cy="250" r="8" fill="rgba(255,255,255,.12)"/>
+        <rect x="170" y="244" width="80" height="12" rx="6" fill="rgba(255,255,255,.08)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容区 -->
+<div class="container">
+  <div class="main-layout">
+
+    <!-- 左栏 -->
+    <aside class="left-col" aria-label="频道与分类导航">
+      <div class="side-block">
+        <h3>频道导航</h3>
+        <nav class="channel-list">
+          <a href="/#intro" class="current">赛事介绍</a>
+          <a href="/#hot">热门作品推荐</a>
+          <a href="/#updates">最新更新动态</a>
+          <a href="/#categories">组别分类入口</a>
+          <a href="/#deepdive">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问题</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#related">相关推荐</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <h3>热门标签</h3>
+        <div class="tag-cloud">
+          <a href="/#hot">数字叙事</a>
+          <a href="/#hot">视觉设计</a>
+          <a href="/#hot">创意写作</a>
+          <a href="/#categories">短片单元</a>
+          <a href="/#categories">交互装置</a>
+          <a href="/#categories">品牌叙事</a>
+          <a href="/#deepdive">评审标准</a>
+          <a href="/#deepdive">奖项对比</a>
+          <a href="/#updates">截稿提醒</a>
+          <a href="/#faq">参赛资格</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 中栏 -->
+    <main class="center-col" id="mainContent">
+
+      <!-- 1. 内容简介 -->
+      <section class="content-section" id="intro">
+        <div class="section-header">
+          <h2>关于 91大赛 的内容定位</h2>
+        </div>
+        <div class="intro-text">
+          <p>
+            <strong>91大赛</strong> 是一个以创意表达与技能展示为核心的综合赛事专题。页面围绕参赛者、评审团与创意爱好者的浏览需求，集中呈现作品档案、赛程更新、组别说明与奖项对比。无论你是准备提交作品的选手，还是想了解赛事方向的观众，都能在这里找到可参考的具体条目。
+          </p>
+          <p>
+            赛事按“数字叙事”“视觉设计”“创意写作”“短片单元”等方向划分组别，每个组别设有独立的提交要求和评审侧重。浏览热门作品可以快速感知当前参赛作品的整体风格与完成度；查看深度解析则能理解评审在创意、执行与表达三个维度上的打分逻辑。
+          </p>
+          <p>
+            如果你正在犹豫报哪个组别，或想对比不同奖项的含金量与后续权益，页面中的分类入口和奖项对比段落提供了逐项拆解。对于关注截稿节奏的参赛者，最新更新动态与相关资讯会以日期为线索整理关键节点，方便安排提交计划。往届选手的评论也能帮助新参赛者了解现场评审的偏好与作品呈现的实际效果。
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="content-section" id="hot">
+        <div class="section-header">
+          <h2>热门作品推荐</h2>
+          <a href="/#updates" class="more-link">查看最新更新 →</a>
+        </div>
+        <div class="card-grid" id="hotGrid">
+          <article class="content-card">
+            <span class="card-type">数字叙事</span>
+            <h3>《潮汐记忆》交互叙事</h3>
+            <p class="card-desc">以沿海渔村口述史为素材，通过滚动触发时间线重组，探讨记忆与地点的关系。</p>
+            <div class="card-tags"><span>交互叙事</span><span>口述史</span><span>海洋文化</span></div>
+            <div class="card-meta"><span>热度 9.4</span><span class="score">★ 4.8</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">视觉设计</span>
+            <h3>《字体生长实验》动态海报</h3>
+            <p class="card-desc">将汉字笔画拆解为可生长模块，随音乐节奏重组，探索文字的可变形态。</p>
+            <div class="card-tags"><span>动态字体</span><span>实验海报</span><span>声音可视化</span></div>
+            <div class="card-meta"><span>热度 8.9</span><span class="score">★ 4.7</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">创意写作</span>
+            <h3>《九平米房间》短篇集</h3>
+            <p class="card-desc">以九平米为空间限制，串联六则城市独居故事，语言克制，细节密度高。</p>
+            <div class="card-tags"><span>城市文学</span><span>短篇叙事</span><span>空间书写</span></div>
+            <div class="card-meta"><span>热度 8.6</span><span class="score">★ 4.6</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">短片单元</span>
+            <h3>《最后一班轮渡》纪实短片</h3>
+            <p class="card-desc">跟拍轮渡驾驶员最后三个月的班次，用长镜头记录航线关闭前的日常。</p>
+            <div class="card-tags"><span>纪实短片</span><span>城市变迁</span><span>长镜头</span></div>
+            <div class="card-meta"><span>热度 9.1</span><span class="score">★ 4.9</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">交互装置</span>
+            <h3>《风之索引》声音装置</h3>
+            <p class="card-desc">观众对麦克风说话，装置将声波转化为悬挂纸片的摆动轨迹，形成风的可视索引。</p>
+            <div class="card-tags"><span>声音装置</span><span>数据可视化</span><span>空间体验</span></div>
+            <div class="card-meta"><span>热度 8.3</span><span class="score">★ 4.5</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">品牌叙事</span>
+            <h3>《慢递邮局》服务设计</h3>
+            <p class="card-desc">重新设计一家只寄慢递的邮局服务流程，将等待时间转化为可体验的叙事环节。</p>
+            <div class="card-tags"><span>服务设计</span><span>品牌体验</span><span>时间叙事</span></div>
+            <div class="card-meta"><span>热度 8.7</span><span class="score">★ 4.7</span></div>
+          </article>
+        </div>
+        <div class="no-result-tip" id="hotNoResult">没有找到匹配的作品，请尝试其他关键词。</div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="content-section" id="updates">
+        <div class="section-header">
+          <h2>最新更新动态</h2>
+          <a href="/#news" class="more-link">更多资讯 →</a>
+        </div>
+        <div class="compact-list">
+          <div class="compact-item">
+            <div class="compact-idx hot">01</div>
+            <div class="compact-body">
+              <h4>“数字叙事”组别提交量突破 120 件</h4>
+              <p>该组别成为本届增长最快的赛道，评审已开始分组预审。</p>
+            </div>
+            <span class="compact-date">06-12</span>
+          </div>
+          <div class="compact-item">
+            <div class="compact-idx hot">02</div>
+            <div class="compact-body">
+              <h4>《潮汐记忆》作者分享创作过程</h4>
+              <p>在讨论区发布长文，讲述口述史采集与时间线设计的取舍。</p>
+            </div>
+            <span class="compact-date">06-10</span>
+          </div>
+          <div class="compact-item">
+            <div class="compact-idx">03</div>
+            <div class="compact-body">
+              <h4>评审标准说明会录像已发布</h4>
+              <p>三位评审分别讲解创意、执行、表达三个维度的打分边界。</p>
+            </div>
+            <span class="compact-date">06-08</span>
+          </div>
+          <div class="compact-item">
+            <div class="compact-idx">04</div>
+            <div class="compact-body">
+              <h4>短片单元新增“现场拍摄”提示</h4>
+              <p>针对外景拍摄类作品，补充了素材版权与出镜授权的说明。</p>
+            </div>
+            <span class="compact-date">06-05</span>
+          </div>
+          <div class="compact-item">
+            <div class="compact-idx">05</div>
+            <div class="compact-body">
+              <h4>交互装置组开放场地技术咨询</h4>
+              <p>参赛者可在每周三下午预约线上咨询，讨论设备与空间需求。</p>
+            </div>
+            <span class="compact-date">06-02</span>
+          </div>
+          <div class="compact-item">
+            <div class="compact-idx">06</div>
+            <div class="compact-body">
+              <h4>创意写作组截稿延期至 6月30日</h4>
+              <p>应参赛者反馈，写作组提交窗口延长两周，评审流程相应顺延。</p>
+            </div>
+            <span class="compact-date">05-28</span>
+          </div>
+          <div class="compact-item">
+            <div class="compact-idx">07</div>
+            <div class="compact-body">
+              <h4>品牌叙事组新增企业命题单元</h4>
+              <p>与两家本地品牌合作，参赛者可选择命题或自由选题。</p>
+            </div>
+            <span class="compact-date">05-24</span>
+          </div>
+          <div class="compact-item">
+            <div class="compact-idx">08</div>
+            <div class="compact-body">
+              <h4>往届获奖作品档案上线</h4>
+              <p>汇总第二届 12 件获奖作品的创作说明与评审评语。</p>
+            </div>
+            <span class="compact-date">05-20</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="content-section" id="categories">
+        <div class="section-header">
+          <h2>组别分类入口</h2>
+          <a href="/#deepdive" class="more-link">查看组别要求 →</a>
+        </div>
+        <div class="category-grid">
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">📖</span>
+            <span class="cat-name">数字叙事</span>
+            <span class="cat-count">68 件作品</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">🎨</span>
+            <span class="cat-name">视觉设计</span>
+            <span class="cat-count">54 件作品</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">✍️</span>
+            <span class="cat-name">创意写作</span>
+            <span class="cat-count">42 件作品</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">🎬</span>
+            <span class="cat-name">短片单元</span>
+            <span class="cat-count">37 件作品</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">🔊</span>
+            <span class="cat-name">交互装置</span>
+            <span class="cat-count">21 件作品</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">🏷️</span>
+            <span class="cat-name">品牌叙事</span>
+            <span class="cat-count">26 件作品</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">📷</span>
+            <span class="cat-name">纪实影像</span>
+            <span class="cat-count">19 件作品</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">🧩</span>
+            <span class="cat-name">跨界实验</span>
+            <span class="cat-count">15 件作品</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="content-section deep-dive" id="deepdive">
+        <div class="section-header">
+          <h2>深度解析：参赛路径与评审逻辑</h2>
+        </div>
+        <p>
+          了解 <strong>91大赛</strong> 的评审逻辑，比单纯追求“做得好”更能提高作品与赛道的匹配度。赛事按组别独立评审，但所有组别共享一套底层评价框架：创意起点、执行完成度、表达清晰度。三者权重因组别而异——数字叙事更看重表达，视觉设计更看重执行，创意写作则更看重创意的独特性与文本控制力。
+        </p>
+
+        <h3>如何选择适合你的组别</h3>
+        <p>
+          选择组别的核心不是“哪个容易获奖”，而是“你的作品形态与评审侧重是否一致”。如果你习惯用文字构建世界，创意写作组或数字叙事组的文字脚本方向更合适；如果你擅长用视觉语言传递信息，视觉设计组或短片单元能更直接地呈现你的能力。
+        </p>
+        <ul>
+          <li><strong>数字叙事：</strong>适合有交互设计意识、同时具备文本或影像素材的创作者。作品需要体现“叙事如何被结构驱动”。</li>
+          <li><strong>视觉设计：</strong>适合平面、动态、字体、品牌方向的设计师。评审关注视觉系统的完整性与细节执行。</li>
+          <li><strong>创意写作：</strong>适合短篇、非虚构、实验文本。评审关注语言质感、结构意识与题材的新鲜度。</li>
+          <li><strong>短片单元：</strong>适合 3—10 分钟的叙事短片或纪实短片。评审关注镜头语言与剪辑节奏。</li>
+          <li><strong>交互装置：</strong>适合有空间或硬件经验的创作者。评审关注观众参与方式与装置稳定性。</li>
+          <li><strong>品牌叙事：</strong>适合服务设计、品牌策划方向。评审关注叙事如何转化为可感知的体验。</li>
+        </ul>
+
+        <div class="highlight-box">
+          一个常见误判：把“视觉设计组”的作品做成“数字叙事组”的形态。两者的核心差异在于，前者回答“如何让人看见”，后者回答“如何让人理解时间中的因果”。提交前对照组别说明，能避免方向性偏差。
+        </div>
+
+        <h3>奖项设置与选择依据</h3>
+        <p>
+          本届 <strong>91大赛</strong> 设置评审团大奖、组别金奖、新锐奖与评审特别提及四类奖项。评审团大奖从所有组别金奖中产生，侧重跨组别的完成度与表达力；组别金奖按组别独立评选；新锐奖面向首次参赛或学生身份的作者；评审特别提及则颁给在某一个维度上有突出尝试但整体尚未成熟的作品。
+        </p>
+        <p>
+          如果你在“组别金奖”与“新锐奖”之间犹豫，先确认自己的参赛身份是否符合新锐奖资格。新锐奖的评审会适当放宽对完成度的要求，更看重创意方向与个人语言的形成。对于已有成熟作品集的创作者，组别金奖的竞争更激烈，但评审反馈也更直接。
+        </p>
+
+        <h3>评审流程与时间节点</h3>
+        <p>
+          评审分为预审、复审与终审三个阶段。预审由组别负责人完成，主要筛除不符合提交规范的作品；复审由三位评审独立打分，取平均分排序；终审针对排名靠前的作品进行合议，确定奖项归属。每个阶段都有明确的截止日期，参赛者可在最新更新动态中查看时间节点。
+        </p>
+        <ul>
+          <li><strong>预审：</strong>6月20日—6月25日，检查文件格式、时长、字数等硬性要求。</li>
+          <li><strong>复审：</strong>6月26日—7月5日，三位评审独立评分并撰写评语。</li>
+          <li><strong>终审：</strong>7月6日—7月10日，评审合议并确认奖项名单。</li>
+          <li><strong>结果公布：</strong>7月15日，在页面更新动态与讨论区同步发布。</li>
+        </ul>
+        <p>
+          往届参赛者常忽略的一点：评审在复审阶段只能看到提交时填写的信息，不会额外查找你的其他作品。因此，提交说明中的“创作意图”与“关键选择”写得越具体，评审越容易理解你的作品。这不是包装，而是减少信息损耗的必要步骤。
+        </p>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="content-section" id="guide">
+        <div class="section-header">
+          <h2>浏览与使用指南</h2>
+        </div>
+        <p style="font-size:14px;color:var(--text-secondary);line-height:1.8;margin-bottom:14px;">
+          页面按“浏览—筛选—深入”的阅读节奏组织。首屏提供主要入口，左栏频道导航帮助定位板块，中栏按内容类型分为作品卡片、更新列表、分类入口与问答折叠。右栏的页内目录与热门条目适合快速跳转，不需要从头读到尾。
+        </p>
+        <ul style="font-size:14px;color:var(--text-secondary);line-height:1.8;padding-left:20px;list-style:disc;margin-bottom:14px;">
+          <li><strong>按组别筛选：</strong>分类入口中的每个组别都可点击，跳转至热门作品区域查看对应类型作品。</li>
+          <li><strong>搜索查找：</strong>页头搜索框支持对作品标题、组别标签与动态标题进行本地筛选，输入后按回车或点击按钮即可。</li>
+          <li><strong>移动端阅读：</strong>在手机上，左栏会转为横向排列的频道卡片，右栏内容自动隐藏，正文保持完整可读。</li>
+          <li><strong>追更方式：</strong>最新更新动态按日期倒序排列，相关资讯提供时间线，方便按周期回访。</li>
+          <li><strong>推荐扩展路径：</strong>从热门作品卡片进入深度解析，再从 FAQ 确认参赛资格，最后回到分类入口选择组别。</li>
+        </ul>
+        <p style="font-size:14px;color:var(--text-secondary);line-height:1.8;">
+          如果你只关心截稿时间，直接查看最新更新动态的前两条即可；如果你在准备提交，建议先读深度解析中的“评审流程与时间节点”，再对照组别分类说明检查材料。
+        </p>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="content-section" id="faq">
+        <div class="section-header">
+          <h2>常见问题</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>91大赛的参赛资格是什么？</summary>
+            <div class="faq-answer">
+              本届赛事面向年满 16 周岁的创作者开放，不限职业与地域。学生身份可勾选“新锐组”参与新锐奖评选。团队参赛需指定一位主联系人，团队成员不超过 4 人。提交时需提供有效联系方式，以便评审沟通。
+            </div>
+          </details>
+          <details>
+            <summary>数字叙事组和短片单元有什么区别？</summary>
+            <div class="faq-answer">
+              数字叙事组接受交互式网页、滚动叙事、数据故事等形态，核心是“结构如何驱动叙事”；短片单元接受 3—10 分钟的线性影像作品，核心是“镜头与剪辑如何传递信息”。如果你的作品需要观众点击、滚动或输入来推进，更适合数字叙事组；如果是完整观看的短片，选短片单元。
+            </div>
+          </details>
+          <details>
+            <summary>参赛作品需要是未发表过的吗？</summary>
+            <div class="faq-answer">
+              作品需为近两年内创作，且未获得过同等级赛事的组别金奖。在个人社交平台或作品集网站发布过的作品仍可参赛，但需在提交说明中注明发布情况。已商业交付的作品需确认版权归属允许参赛。
+            </div>
+          </details>
+          <details>
+            <summary>评审更看重创意还是完成度？</summary>
+            <div class="faq-answer">
+              评审采用三维评分：创意起点、执行完成度、表达清晰度。不同组别权重不同。创意写作组与数字叙事组更看重创意的独特性，视觉设计组与短片单元更看重执行完成度，交互装置与品牌叙事组则强调表达清晰度。建议根据组别侧重分配打磨精力。
+            </div>
+          </details>
+          <details>
+            <summary>结果什么时候公布，如何查询？</summary>
+            <div class="faq-answer">
+              终审合议后，结果计划于 7 月 15 日在本页“最新更新动态”与讨论区同步发布。同时会通过提交时填写的联系方式通知获奖者。未获奖者不会单独通知，但可在结果页面查看评审评语摘要。
+            </div>
+          </details>
+          <details>
+            <summary>可以同时参加多个组别吗？</summary>
+            <div class="faq-answer">
+              可以，但每个组别需提交独立作品，且同一作品不得跨组重复提交。不同组别的作品可以是同一创作计划的不同阶段成果，但需在提交说明中注明关联关系，避免评审误判为重复投稿。
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="content-section" id="comments">
+        <div class="section-header">
+          <h2>参赛者与观众讨论</h2>
+        </div>
+        <div class="comment-list">
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#2c4f7a;">林</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">林屿</span><span class="comment-time">06-12</span></div>
+              <p class="comment-text">数字叙事组的作品质量比去年整齐很多，《潮汐记忆》的时间线处理确实值得参考。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#7a5a2c;">陈</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">陈默</span><span class="comment-time">06-11</span></div>
+              <p class="comment-text">短片单元的外景拍摄提示更新得挺及时，之前确实没注意到出镜授权的问题。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#2c6b4f;">周</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">周小满</span><span class="comment-time">06-10</span></div>
+              <p class="comment-text">想问一下创意写作组延期后，评审时间会不会压缩？看了更新动态还是有点担心评语质量。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#6b2c4f;">吴</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">吴桐</span><span class="comment-time">06-09</span></div>
+              <p class="comment-text">《字体生长实验》的动态海报在手机上看起来也很流畅，作者对性能做了不少优化。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#4f2c6b;">赵</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">赵一舟</span><span class="comment-time">06-08</span></div>
+              <p class="comment-text">评审标准说明会录像里，讲“表达清晰度”的那一段最有用，建议新参赛者先看。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#2c4f7a;">孙</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">孙可</span><span class="comment-time">06-07</span></div>
+              <p class="comment-text">品牌叙事组的企业命题单元有点意思，但命题说明写得比较简略，希望补充参考案例。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#7a2c2c;">李</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">李迟</span><span class="comment-time">06-06</span></div>
+              <p class="comment-text">交互装置组的线上技术咨询很实用，设备清单和场地限制都讲清楚了。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#2c7a6b;">王</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">王雨眠</span><span class="comment-time">06-05</span></div>
+              <p class="comment-text">《九平米房间》的短篇集语言很克制，但有几篇结尾稍显仓促，整体还是喜欢的。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#6b6b2c;">郑</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">郑南</span><span class="comment-time">06-04</span></div>
+              <p class="comment-text">建议页面的组别分类入口加上“适合人群”标签，现在只能点进去看作品再判断。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#2c2c7a;">何</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">何遇</span><span class="comment-time">06-03</span></div>
+              <p class="comment-text">往届获奖作品档案上线很及时，对比了两届的评审评语，能看出评分侧重的变化。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#7a4f2c;">许</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">许星野</span><span class="comment-time">06-02</span></div>
+              <p class="comment-text">《最后一班轮渡》的长镜头很有耐心，在短片单元里算是气质很特别的一部。</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="comment-avatar" style="background:#2c7a4f;">高</div>
+            <div class="comment-body">
+              <div class="comment-head"><span class="comment-name">高远</span><span class="comment-time">06-01</span></div>
+              <p class="comment-text">新锐奖的资格说明如果能再明确一点“学生身份”的认定标准会更好，比如是否接受非全日制。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="content-section" id="news">
+        <div class="section-header">
+          <h2>相关资讯</h2>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <h3>“数字叙事”组别提交量同比增长四成</h3>
+            <div class="news-meta"><span>06-12</span><span>赛事数据</span></div>
+            <p>交互式叙事成为本届增长最快的方向，评审组已增加预审人手以应对提交流量。</p>
+          </article>
+          <article class="news-item">
+            <h3>评审标准说明会重点回顾：表达清晰度如何打分</h3>
+            <div class="news-meta"><span>06-08</span><span>评审动态</span></div>
+            <p>三位评审在说明会上拆解了“表达清晰度”在作品中的具体表现，强调结构可读性优先于修辞。</p>
+          </article>
+          <article class="news-item">
+            <h3>创意写作组截稿延期，评审流程相应调整</h3>
+            <div class="news-meta"><span>05-28</span><span>赛程更新</span></div>
+            <p>提交窗口延长两周，复审周期保持不变，终审合议时间顺延三天。</p>
+          </article>
+          <article class="news-item">
+            <h3>品牌叙事组新增企业命题，聚焦本地品牌年轻化</h3>
+            <div class="news-meta"><span>05-24</span><span>组别动态</span></div>
+            <p>两家本地品牌发布命题简报，参赛者可在自由选题与企业命题之间二选一提交。</p>
+          </article>
+          <article class="news-item">
+            <h3>交互装置组开放场地技术咨询预约</h3>
+            <div class="news-meta"><span>05-20</span><span>技术支持</span></div>
+            <p>每周三下午提供线上咨询，覆盖设备清单、空间尺寸与现场用电限制。</p>
+          </article>
+          <article class="news-item">
+            <h3>往届获奖作品档案上线，含完整评审评语</h3>
+            <div class="news-meta"><span>05-16</span><span>档案更新</span></div>
+            <p>第二届 12 件获奖作品的创作说明与评审评语已整理发布，可作为提交材料的参考。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="content-section" id="related">
+        <div class="section-header">
+          <h2>相关推荐</h2>
+        </div>
+        <div class="related-tags">
+          <a href="/#hot">数字叙事交互作品 <span class="arrow">→</span></a>
+          <a href="/#hot">动态字体海报设计 <span class="arrow">→</span></a>
+          <a href="/#hot">城市短篇写作方向 <span class="arrow">→</span></a>
+          <a href="/#hot">纪实短片长镜头 <span class="arrow">→</span></a>
+          <a href="/#hot">声音交互装置 <span class="arrow">→</span></a>
+          <a href="/#hot">品牌服务设计案例 <span class="arrow">→</span></a>
+          <a href="/#categories">跨界实验组别说明 <span class="arrow">→</span></a>
+          <a href="/#deepdive">评审评分维度拆解 <span class="arrow">→</span></a>
+        </div>
+      </section>
+
+      <!-- 11. 精选内容 / 创作者证言 -->
+      <section class="content-section" id="testimonial">
+        <div class="section-header">
+          <h2>创作者证言</h2>
+        </div>
+        <div class="quote-card">
+          <blockquote>
+            “参加 91大赛 最大的收获不是奖项，而是评审评语里那句‘叙事结构可以再收紧’——后来我重做了整个时间线，才理解那句话的意思。如果你也在准备提交，建议先想清楚你的作品在回答什么问题。”
+          </blockquote>
+          <cite>—— 第二届数字叙事组参赛者 · 林屿</cite>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏 -->
+    <aside class="right-col" aria-label="辅助阅读">
+      <div class="side-block">
+        <h3>页内目录</h3>
+        <nav class="toc-list">
+          <a href="/#intro"><span class="dot"></span>赛事介绍</a>
+          <a href="/#hot"><span class="dot"></span>热门作品推荐</a>
+          <a href="/#updates"><span class="dot"></span>最新更新动态</a>
+          <a href="/#categories"><span class="dot"></span>组别分类入口</a>
+          <a href="/#deepdive"><span class="dot"></span>深度解析</a>
+          <a href="/#guide"><span class="dot"></span>浏览与使用指南</a>
+          <a href="/#faq"><span class="dot"></span>常见问题</a>
+          <a href="/#comments"><span class="dot"></span>用户评论</a>
+          <a href="/#news"><span class="dot"></span>相关资讯</a>
+          <a href="/#related"><span class="dot"></span>相关推荐</a>
+          <a href="/#testimonial"><span class="dot"></span>创作者证言</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <h3>热门条目</h3>
+        <div class="hot-list">
+          <div class="hot-item"><span class="hot-rank top">1</span><a href="/#hot">《潮汐记忆》交互叙事</a></div>
+          <div class="hot-item"><span class="hot-rank top">2</span><a href="/#hot">《最后一班轮渡》纪实短片</a></div>
+          <div class="hot-item"><span class="hot-rank">3</span><a href="/#hot">《字体生长实验》动态海报</a></div>
+          <div class="hot-item"><span class="hot-rank">4</span><a href="/#hot">《九平米房间》短篇集</a></div>
+          <div class="hot-item"><span class="hot-rank">5</span><a href="/#hot">《慢递邮局》服务设计</a></div>
+        </div>
+      </div>
+      <div class="side-block">
+        <h3>延伸阅读</h3>
+        <div class="reading-links">
+          <a href="/#deepdive">组别选择对照表 <span>→</span></a>
+          <a href="/#deepdive">评审流程时间线 <span>→</span></a>
+          <a href="/#faq">参赛资格问答 <span>→</span></a>
+          <a href="/#news">往届获奖档案 <span>→</span></a>
+          <a href="/#guide">移动端浏览说明 <span>→</span></a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/#home" class="logo" style="gap:8px;">
+          <svg width="28" height="28" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="100" height="100" rx="18" fill="#f5c542"/>
+            <text x="50" y="66" font-size="46" font-weight="900" text-anchor="middle" fill="#1e3a5f" font-family="sans-serif">91</text>
+          </svg>
+          <span class="logo-text">91大赛</span>
+        </a>
+        <p>创意表达与技能展示的赛事专题，呈现作品档案、组别说明、评审逻辑与奖项对比，服务参赛者与创意观众。</p>
+      </div>
+      <div class="footer-col">
+        <h4>赛事内容</h4>
+        <a href="/#hot">热门作品</a>
+        <a href="/#updates">最新动态</a>
+        <a href="/#categories">组别分类</a>
+        <a href="/#deepdive">深度解析</a>
+      </div>
+      <div class="footer-col">
+        <h4>参赛参考</h4>
+        <a href="/#faq">常见问题</a>
+        <a href="/#guide">使用指南</a>
+        <a href="/#deepdive">评审流程</a>
+        <a href="/#news">相关资讯</a>
+      </div>
+      <div class="footer-col">
+        <h4>互动</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#testimonial">创作者证言</a>
+        <a href="/#related">相关推荐</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 91大赛 内容专题 · 部分内容为示例数据，仅用于展示页面结构</span>
+      <span>创意 · 技能 · 表达</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // 搜索筛选
+    const input = document.getElementById('searchInput');
+    const btn = document.getElementById('searchBtn');
+    const hotGrid = document.getElementById('hotGrid');
+    const noResult = document.getElementById('hotNoResult');
+    const cards = hotGrid ? Array.from(hotGrid.querySelectorAll('.content-card')) : [];
+
+    function doSearch() {
+      const q = (input.value || '').trim().toLowerCase();
+      if (!q) {
+        cards.forEach(c => c.style.display = '');
+        if (noResult) noResult.classList.remove('show');
+        return;
+      }
+      let visible = 0;
+      cards.forEach(c => {
+        const text = c.textContent.toLowerCase();
+        if (text.includes(q)) {
+          c.style.display = '';
+          visible++;
+        } else {
+          c.style.display = 'none';
+        }
+      });
+      if (noResult) {
+        noResult.classList.toggle('show', visible === 0);
+      }
+    }
+
+    if (btn) btn.addEventListener('click', doSearch);
+    if (input) {
+      input.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') doSearch();
+      });
+      input.addEventListener('input', function() {
+        // 实时筛选，但避免空内容时闪烁
+        const q = (input.value || '').trim();
+        if (!q) {
+          cards.forEach(c => c.style.display = '');
+          if (noResult) noResult.classList.remove('show');
+        } else {
+          doSearch();
+        }
+      });
+    }
+
+    // 公告条关闭后，页头吸顶位置调整
+    const closeBtn = document.querySelector('.announce-bar .close-btn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        const bar = document.getElementById('announceBar');
+        const header = document.getElementById('siteHeader');
+        if (bar) bar.style.display = 'none';
+        if (header) header.classList.add('hide-announce');
+        // 调整滚动偏移变量
+        document.documentElement.style.setProperty('--announce-h', '0px');
+      });
+    }
+  })();
+</script>
+
+</body>
+          </html>
